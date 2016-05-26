@@ -92,6 +92,16 @@ int main()
         joss_time=end1-start;
         cout<<"bottom cutRod: "<<joss_time/CLOCKS_PER_SEC<<endl;
     delete a;
+    //------------------------
+    //var size = 70
+    //cutRod - 0.00006
+    //Memoized_CutRod - 0.00005
+    //Bottom_up_cutRod - 0.00005
+    //------------------------
+    //var size = 1800
+    //cutRod - 0.00006
+    //Memoized_CutRod -0.01746
+    //Bottom_up_cutRod -0.008951
     system("pause");
     return 0;
 }
