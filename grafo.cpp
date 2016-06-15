@@ -38,15 +38,6 @@ struct Graph
     typedef B E;
     vector<Node*> m_nodes;
     Graph(){}
-    Node* find(N ndata)
-    {
-        for(typename vector<Node*>::iterator nit = m_nodes.begin(); nit != m_nodes.end(); ++nit)
-        {
-            if ((*nit)->data == ndata)
-                return (*nit);
-        }
-        return nullptr;
-    }
     bool insert_node(N data){
         for(unsigned int i=0;i<m_nodes.size();i++)
         {
